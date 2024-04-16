@@ -59,8 +59,7 @@ const Header = () => {
                 {item.title}
               </a>
             ))}
-            <div className="-z-1 h-full w-full">
-              {" "}
+            <div className="-z-1">
               <HamburgerMenu />
             </div>
           </div>
