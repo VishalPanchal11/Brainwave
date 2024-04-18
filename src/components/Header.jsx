@@ -22,14 +22,14 @@ const Header = () => {
   };
 
   const handleClick = () => {
-    if(!openNavigation) return;
+    if (!openNavigation) return;
     enablePageScroll();
     setOpenNavigation(false);
   };
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 bg-n-8/90 backdrop-blur-sm border-b border-n-6 ${
+      className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 ${
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     >
@@ -39,8 +39,8 @@ const Header = () => {
         </a>
         <nav
           className={`${
-            openNavigation ? "top-[150%] " : "hidden"
-          } fixed top-{5rem} left-0 right-0 bottom-0 lg:static lg:flex bg-n-8 lg:mx-auto lg:bg-transparent`}
+            openNavigation ? "flex" : "hidden"
+          } fixed top-[5rem] left-0 right-0 bottom-0 lg:static lg:flex bg-n-8 lg:mx-auto lg:bg-transparent`}
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((item) => (
@@ -59,10 +59,8 @@ const Header = () => {
                 {item.title}
               </a>
             ))}
-            <div className="-z-1">
-              <HamburgerMenu />
-            </div>
           </div>
+          <HamburgerMenu />
         </nav>
         <a
           href="#signup"
