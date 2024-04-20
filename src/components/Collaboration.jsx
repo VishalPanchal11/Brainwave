@@ -1,4 +1,3 @@
-import React from "react";
 import Section from "./Section";
 import { collabApps, collabContent, collabText } from "../constants";
 import { brainwaveSymbol, check } from "../assets";
@@ -9,7 +8,7 @@ const Collaboration = () => {
   return (
     <Section crosses>
       <div className="container lg:flex">
-        <div className="max-w-[25rem]">
+        <div className="max-w-[25rem] sm:ml-[10rem] md:ml-[13rem] lg:ml-0">
           <h2 className="h2 mb-4 md:mb-4">
             AI Chat App for&nbsp;seamless collaboration
           </h2>
@@ -30,8 +29,8 @@ const Collaboration = () => {
           </ul>
           <Button className={`lg:ml-12 md:ml-6 sm:ml-3`}>Try it now</Button>
         </div>
-        <div className="lg:ml-auto xl:w-[32rem] mt-4 ">
-          <p className="body-2  text-n-4  md:mb-[3.3rem] lg:mb-[5.65rem] max-w-[24rem] lg:mx-auto text-justify">
+        <div className="lg:ml-auto xl:w-[32rem] lg:mt-4 mt-8">
+          <p className="sm:ml-[10rem] md:ml-[12.5rem] lg:ml-auto body-2  text-n-4  md:mb-[3.3rem] lg:mb-[5.65rem] max-w-[24rem] lg:mx-auto text-justify">
             {collabText}
           </p>
           <div className=" relative left-1/2 flex w-[22rem] aspect-square rounded-full border border-n-6 -translate-x-1/2 scale-75 md:scale-100">
@@ -71,7 +70,7 @@ const Collaboration = () => {
                 </li>
               ))}
             </ul>
-              <LeftCurve />
+            <LeftCurve />
             <RightCurve />
           </div>
         </div>
