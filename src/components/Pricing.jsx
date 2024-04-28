@@ -26,7 +26,7 @@ const Pricing = () => {
             />{" "}
           </div>
         </div>
-        <Heading className="flex flex-col md:items-center"
+        <Heading
           tag="GET STARTED WITH BRAINWAVE"
           title="Pay once, use forever"
         />
