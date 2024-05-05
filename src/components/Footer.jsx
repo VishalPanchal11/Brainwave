@@ -3,7 +3,7 @@ import Section from "./Section";
 
 const Footer = () => {
   return (
-    <Section crosses className="!px-0 !py-10">
+    <Section crosses className="!px-0 !py-7 -mt-15">
       <div className="container flex justify-center items-center sm:justify-between gap-10 max-sm:flex-col">
         <p className="caption text-n-4 lg:block">
           © {new Date().getFullYear()} All rights reserved.

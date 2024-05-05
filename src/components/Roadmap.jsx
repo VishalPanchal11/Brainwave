@@ -9,7 +9,7 @@ import Button from "./Button";
 const Roadmap = () => {
   return (
     <Section className="overflow-hidden" id="roadmap">
-      <div className="container md:pb-10">
+      <div className="container md:pb-10 -mt-[3rem]">
         <Heading title="What we're working on" tag="Ready to get started" />
         <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[3rem]">
           {roadmap.map((item) => {
